@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fauget</title>
+    <link rel="shortcut icon" href="./logo.png">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="header" id="header">
+        <nav>
+            <img src="./logo.png" alt="" class="logo">
+            <ul class="colors">
+                <li id="yellowsweater"><a href="#" class="hover" id="hover">Yellow Sweater</a></li>
+                <li id="vests"><a href="#" class="hover"id="hover">Green Vests</a></li>
+                <li id="pinkshirt"><a href="#" class="hover"id="hover">Pink Shirt</a></li>
+                <li id="greensweater"><a href="#" class="hover"id="hover">Green Sweater</a></li>
+            </ul>
+            <a href="#" class="button">Buy Now</a>
+        </nav>
+        <div class="info" id="info">
+            <div>
+                <h2 id="color">Yellow</h2>
+            </div>
+            <div>
+                <h2 id="size">S - L</h2>
+            </div>
+            <div class="line"></div>
+            <div>
+                <h2 id="style">Yellow Sweater</h2>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    let header = document.getElementById('header')
+    let ys = document.getElementById('yellowsweater')
+    let v = document.getElementById('vests')
+    let ps = document.getElementById('pinkshirt')
+    let gs = document.getElementById('greensweater')
+    let color = document.getElementById('color')
+    let stylee = document.getElementById('style')
+    let info = document.getElementById('info')
+
+    v.onclick = function(){
+        header.style.backgroundImage = 'url(./image-2.jpg)'
+        stylee.innerHTML = "Green Vests"
+        color.innerHTML = "Green"
+        stylee.innerHTML = "Vests"
+        info.style.color = "greenyellow"
+    }
+    ys.onclick = function(){
+        header.style.backgroundImage = 'url(./image-1.jpg)'
+        stylee.innerHTML = "Yellow Sweater"
+        color.innerHTML = "Yellow"
+        stylee.innerHTML = "Sweater"
+        info.style.color = "yellow"
+    }
+    ps.onclick = function(){
+        header.style.backgroundImage = 'url(./image-4.jpg)'
+        stylee.innerHTML = "Pink Shirt"
+        color.innerHTML = "Pink"
+        stylee.innerHTML = "Shirt"
+        info.style.color = "pink"
+    }
+    gs.onclick = function(){
+        header.style.backgroundImage = 'url(./image-3.jpg)'
+        stylee.innerHTML = "Green Sweater"
+        color.innerHTML = "Green"
+        stylee.innerHTML = "Sweater"
+        info.style.color = "lightgreen"
+    }
+</script>
+</html>
